@@ -94,6 +94,8 @@ typedef union {
   };
 } rgblight_config_t;
 
+extern rgblight_config_t rgblight_config;
+
 void rgblight_init(void);
 void rgblight_increase(void);
 void rgblight_decrease(void);
