@@ -55,3 +55,7 @@ BL = Backlighting = In-Switch LED
 const uint16_t PROGMEM fn_actions[] = {
 	[0] = ACTION_LAYER_MOMENTARY(1),  // to Fn overlay
 };
+
+void rgblight_task_user(void) {
+  rgblight_effect_breathing(2);
+}

@@ -134,10 +134,14 @@ void rgblight_show_solid_color(uint8_t r, uint8_t g, uint8_t b);
 
 void rgblight_task(void);
 
+void rgblight_task_kb(void);
+void rgblight_task_user(void);
+
 void rgblight_timer_init(void);
 void rgblight_timer_enable(void);
 void rgblight_timer_disable(void);
 void rgblight_timer_toggle(void);
+void rgblight_default_effects(void);
 void rgblight_effect_breathing(uint8_t interval);
 void rgblight_effect_rainbow_mood(uint8_t interval);
 void rgblight_effect_rainbow_swirl(uint8_t interval);

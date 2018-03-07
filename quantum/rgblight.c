@@ -480,6 +480,20 @@ void rgblight_show_solid_color(uint8_t r, uint8_t g, uint8_t b) {
 }
 
 void rgblight_task(void) {
+  rgblight_task_kb();
+}
+
+__attribute__ ((weak))
+void rgblight_task_kb(void) {
+  rgblight_task_user();
+}
+
+__attribute__ ((weak))
+void rgblight_task_user(void) {
+  rgblight_default_effects();
+}
+
+void rgblight_default_effects(void) {
   if (rgblight_timer_enabled) {
     // mode = 1, static light, do nothing here
     if (rgblight_config.mode >= 2 && rgblight_config.mode <= 5) {
