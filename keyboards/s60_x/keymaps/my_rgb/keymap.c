@@ -30,7 +30,7 @@ BL = Backlighting = In-Switch LED
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │ Up  │     │UGHUI│UGHUD│     │     │PGUP │PGDWN│PRTSC│SCLCK│PAUSE│     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │Left │Down │Right│UGSAI│UGSAD│     │     │     │     │     │     │▒▒▒▒▒│     │█████│
+│ LCK │Left │Down │Right│UGSAI│UGSAD│     │     │     │     │     │     │▒▒▒▒▒│     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │UGTOG│UGMOD│UIVAI│UGVAD│     │     │     │BLDEC│BLTOG│BLINC│▒▒▒▒▒│     │▒▒▒▒▒│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
@@ -40,7 +40,7 @@ BL = Backlighting = In-Switch LED
     KEYMAP(
         RESET,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_TRNS, KC_TRNS, \
         KC_TRNS, KC_TRNS, KC_UP,   KC_TRNS, RGB_HUI, RGB_HUD, KC_TRNS, KC_TRNS, KC_PGUP, KC_PGDN, KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS,       \
-        KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, RGB_SAI, RGB_SAD, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,       \
+        KC_LOCK, KC_LEFT, KC_DOWN, KC_RGHT, RGB_SAI, RGB_SAD, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,       \
         KC_TRNS, KC_TRNS, RGB_TOG, RGB_MOD, RGB_VAI, RGB_VAD, KC_TRNS, KC_TRNS, KC_TRNS, BL_DEC,  BL_TOGG, BL_INC,  KC_TRNS, KC_TRNS, KC_TRNS, \
         KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,                   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 
